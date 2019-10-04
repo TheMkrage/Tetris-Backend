@@ -37,7 +37,7 @@ impl Handler for Server {
                     return self.out.send(text);
                 }
                 Err(e) => {
-                    println!("Could not parse status: {}\n", e)
+                    println!("Could not parse status: {}\n", e);
                     return Ok(());
                 },
             }
